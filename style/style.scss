@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  margin-top: 50px;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgb(241, 236, 236);
+}
+
+header * {
+  display: inline;
+  height: 50px;
+}
+
+header ul {
+  padding: 0;
+}
+
+header li {
+  margin-left: 20px;
+}
+
+section {
+  height: 100vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-size: cover; /* Add this line */
+  background-position: center center; /* Add this line */
+  background-repeat: no-repeat; /* Add this line */
+  background-attachment: fixed; /* Add this line */
+}
+
+#hero .profile-img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+footer {
+  text-align: center;
+  padding: 50px;
+}
+
+#hero h1 {
+  font-size: 3em;
+}
+
+section h2 {
+  font-size: 2.5em;
+}
+
+section h3 {
+  font-size: 1.5em;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Add everything below here */
+
+#hero {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url("https://i.pinimg.com/564x/96/29/fc/9629fc7b860ab7689d6474500eb1a9ef.jpg");
+}
+
+#about {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url("https://i.pinimg.com/564x/35/8e/7c/358e7cf87f04130e92a7e469b024a43e.jpg");
+}
+
+#contact {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url("https://i.pinimg.com/564x/d9/45/55/d945552b31882240626632bf170663aa.jpg");
+}
+
+
+$green: #84AD47;
+$red: #AD4747;
+$blue: #4784AD;
+
+form {
+  width: 50%;
+  margin: 10% auto;
+  min-width: 9rem;
+}
+  
+input, textarea {
+  float: left;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background: darken(#f9f9f9, 10%);
+  color: darken(#f9f9f9, 50%);
+  
+  &[type=submit] {
+    background: $green;
+    color: #fff;
+    width: auto;
+    float: right;
+  }
+
+  &::placeholder {
+    color: darken(#f9f9f9, 50%);
+  }
+
+  &.error {
+    background: $red;
+    color: #fff;
+    &::placeholder {
+      color: darken($red, 60%);
+    }
+  }
+}
+textarea {
+  height: 10rem;
+}
+.captcha {
+  float:left;
+  input {
+    float: right;
+  }
+  input[name=question] {
+    width: 4rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    text-align: right;
+    padding-right: 0;
+  }
+  [name=captcha] {
+    width: 5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 0.5rem;
+    &::placeholder {
+      text-align: center;
+    }
+  }
+}
+
+
+
+
+
+
+
+
